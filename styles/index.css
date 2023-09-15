@@ -21,7 +21,7 @@
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -119,6 +119,9 @@ p {
 
 .nav {
     background: rgb(158, 4, 63);
+}
+
+.nav>section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -162,7 +165,7 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-    .nav {
+    .nav>section {
         flex-wrap: wrap;
     }
 
