@@ -1,0 +1,70 @@
+/*! SQUIREL FONT */
+
+@font-face {
+    font-family: 'famousregular';
+    src: url('../fonts/famous-webfont.woff2') format('woff2'),
+        url('../fonts/famous-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+/*! GENERAL PART */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/*! TYPOGRAHY PART*/
+
+html {
+    /* TODO 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 2.4rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
