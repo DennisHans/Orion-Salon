@@ -68,3 +68,82 @@ h3 {
         font-weight: 500;
     }
 }
+
+/* ! NAV PART */
+
+.nav {
+    background: rgb(158, 4, 63);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_brand {
+    width: 8rem;
+    height: 8rem;
+}
+
+.nav_toggler {
+    width: 6rem;
+    height: 6rem;
+    display: none;
+}
+
+.nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.list__inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_li {
+    margin: 0 2rem;
+}
+
+.nav_li_a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav_toggler {
+        display: block;
+    }
+
+    .list__inline {
+        display: block;
+        width: 100%;
+    }
+
+    .nav_li {
+        margin: 2rem 0;
+    }
+
+    .collapsible .nav_toggler {
+        transform: rotate(-90deg);
+    }
+
+    .collapsible.collapsible__expanded .nav_toggler {
+        transform: rotate(0);
+    }
+
+    .collapsible .collapsible__content {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    .collapsible.collapsible__expanded .collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
+    }
+}
