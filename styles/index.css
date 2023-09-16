@@ -384,6 +384,8 @@ p {
 .kwaffi_heading {
     text-align: center;
     color: rgb(158, 4, 63);
+    margin-top: 6rem;
+    margin-bottom: 8rem;
 }
 
 .kwaffi_content {
@@ -405,10 +407,23 @@ p {
     .kwaffi_content {
         margin-top: 1.5rem;
     }
+
+    .kwaffi_heading {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
 }
 
 
 /* ! SEVIS PART */
+
+.sevis_head {
+    text-align: center;
+    color: rgb(158, 4, 63);
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    visibility: hidden;
+}
 
 .sevis_header {
     padding: 1rem;
@@ -432,4 +447,19 @@ p {
 .sevis_price {
     color: antiquewhite;
     font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+    .grid__three__cols__sevis {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        margin: 2rem 0;
+    }
+
+    .sevis_head {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
