@@ -216,6 +216,7 @@ p {
 @media screen and (max-width: 767px) {
     .nav>section {
         flex-wrap: wrap;
+        padding: 1rem;
     }
 
     .nav_toggler {
@@ -287,12 +288,13 @@ p {
 
     .banner_heading {
         white-space: nowrap;
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .banner_tagline {
         white-space: nowrap;
         font-weight: 500;
+        font-size: 3rem;
     }
 
     .glass {
@@ -330,7 +332,7 @@ p {
 
     .badges {
         width: 100%;
-        max-width: 150px;
+        max-width: 145px;
         margin: 0.5rem 0;
         font-size: 1.5rem;
     }
