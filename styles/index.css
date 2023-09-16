@@ -68,6 +68,8 @@
 
 .grid {
     display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .grid__one__col {
@@ -90,6 +92,25 @@
     padding: 7rem 1rem;
 }
 
+/* ! BADGES CLASS */
+
+.badges {
+    display: block;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.badges__primary {
+    background: rgb(158, 4, 63);
+    color: white;
+}
 
 /* ! TYPOGRAHY PART*/
 
@@ -289,4 +310,32 @@ p {
         align-items: center;
     }
 
+}
+
+/* ! KWAFFI PART */
+
+.kwaffi_heading {
+    text-align: center;
+    color: rgb(158, 4, 63);
+}
+
+.kwaffi_content {
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .grid__three__cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .badges {
+        width: 100%;
+        max-width: 150px;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+    }
+
+    .kwaffi_content {
+        margin-top: 1.5rem;
+    }
 }
