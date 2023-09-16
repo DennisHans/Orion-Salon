@@ -112,6 +112,71 @@
     color: white;
 }
 
+
+/* ! LIST CLASS */
+
+.list {
+    list-style-type: none;
+    padding-left: 3.5rem;
+}
+
+.list__thick {
+    list-style-image: url(../icons/tick.svg);
+}
+
+.list__li {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.list__primary li {
+    color: rgb(158, 4, 63);
+}
+
+.list__secondary li {
+    color: lightpink;
+}
+
+
+/* ! BUTTON CLASS */
+
+.btn {
+    font-size: 3rem;
+    border-radius: 20px;
+    padding: 1rem;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.btn__primary {
+    background: rgb(158, 4, 63);
+    color: white;
+}
+
+.btn__secondary {
+    background: lightpink;
+    color: white;
+}
+
+
+/* ! CARD CLASS */
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card__primary {
+    box-shadow: 0 0 5px 5px rgba(158, 4, 63, 0.4);
+}
+
+.card__secondary {
+    box-shadow: 0 0 5px 5px rgba(255, 182, 193, 0.4);
+}
+
+
 /* ! TYPOGRAHY PART*/
 
 html {
@@ -340,4 +405,31 @@ p {
     .kwaffi_content {
         margin-top: 1.5rem;
     }
+}
+
+
+/* ! SEVIS PART */
+
+.sevis_header {
+    padding: 1rem;
+}
+
+.card__primary .sevis_header {
+    background: rgb(158, 4, 63);
+    width: 100%;
+}
+
+.card__secondary .sevis_header {
+    background: lightpink;
+    width: 100%;
+}
+
+.sevis_heading {
+    color: white;
+    font-size: 4rem;
+}
+
+.sevis_price {
+    color: antiquewhite;
+    font-size: 3rem;
 }
