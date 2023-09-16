@@ -35,6 +35,7 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
+    padding: 1rem;
 }
 
 .glass:hover {
@@ -60,6 +61,33 @@
 .collapsible__expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;
+}
+
+
+/* ! GRID CLASS */
+
+.grid {
+    display: grid;
+}
+
+.grid__one__col {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid__two__cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__three__cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ! SKEWED CLASS */
+
+.block__skewed__right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    padding: 7rem 1rem;
 }
 
 
@@ -102,15 +130,15 @@ p {
     }
 
     h1 {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 500;
     }
 }
@@ -192,8 +220,11 @@ p {
     background: rgb(158, 4, 63);
 }
 
-.block__skewed__right {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+.bloc__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner_heading {
@@ -206,4 +237,56 @@ p {
     color: white;
     font-size: 4rem;
     font-family: 'famousregular';
+}
+
+.banner_tagline::before {
+    content: open-quote;
+}
+
+.banner_tagline::after {
+    content: close-quote;
+}
+
+.block__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+@media screen and (max-width: 767px) {
+    .banner .container .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner {
+        padding: 1rem 1rem 8rem 1rem;
+    }
+
+    .banner_heading {
+        white-space: nowrap;
+        font-size: 4.5rem;
+    }
+
+    .banner_tagline {
+        white-space: nowrap;
+        font-weight: 500;
+    }
+
+    .glass {
+        background: 0;
+        border-radius: 0;
+        box-shadow: 0;
+        backdrop-filter: 0;
+        -webkit-backdrop-filter: 0;
+        border: 0;
+        cursor: none;
+        padding: 0;
+    }
+
+    .block__content {
+        align-items: center;
+    }
+
 }
