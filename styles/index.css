@@ -174,7 +174,7 @@
 .btn {
     font-size: 3rem;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2rem 2rem;
     border: 0;
     outline: 0;
     text-align: center;
@@ -222,7 +222,7 @@
 /* ! MEDIA CLASS */
 
 .media {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .medi__icon {
