@@ -604,8 +604,8 @@ p {
 
 /* ! FOOTER PART */
 
-footer {
-    margin-top: 3rem;
+#footer {
+    margin-top: 15rem;
 }
 
 .footer__skin {
