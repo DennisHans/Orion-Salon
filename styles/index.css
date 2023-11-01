@@ -604,6 +604,10 @@ p {
 
 /* ! FOOTER PART */
 
+footer {
+    margin-top: 3rem;
+}
+
 .footer__skin {
     background: black;
     padding: 8rem;
@@ -642,7 +646,7 @@ p {
     }
 
     .footer__skin {
-        background: darkgray;
+        background: black;
         padding: 1rem;
     }
 
@@ -680,5 +684,9 @@ p {
 
     .list__li__footer {
         font-size: 4rem;
+    }
+
+    #footer {
+        margin-top: 7rem;
     }
 }
